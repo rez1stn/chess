@@ -18,7 +18,8 @@ export default function Ches_s() {
   
   
  useEffect(() => {
-    const socket = new WebSocket('ws://localhost:5000/')
+   
+    const socket = new WebSocket("https://shielded-fjord-48833.herokuapp.com/")
     setSocket(socket)
     socket.onopen =()=>{
     console.log('подключение на клиенте')
